@@ -1,0 +1,18 @@
+<div class="switch-panel">
+  <div class="switch-login">
+    <div class="switch-login-content">
+      <ng-content select="[login]"></ng-content>
+    </div>
+    <div class="to-register delay-height">
+      <button (click)="toggleSections()">REGISTRAR</button>
+    </div>
+  </div>
+  <div class="switch-register disabled">
+    <div class="switch-register-content">
+      <ng-content select="[register]"></ng-content>
+    </div>
+    <div class="to-login">
+      <button (click)="toggleSections()">LOGAR</button>
+    </div>
+  </div>
+</div>
