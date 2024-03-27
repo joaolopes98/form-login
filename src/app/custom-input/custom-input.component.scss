@@ -1,0 +1,24 @@
+.custom-input {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  label {
+    font-size: 1.2rem;
+  }
+
+  input {
+    padding: 5px;
+
+    font-size: 1rem;
+    background-color: #f2f2f2;
+    border-color: transparent;
+    border: none; /* Remove a borda padrão */
+    border-bottom: 2px solid transparent;
+    outline: none;
+
+    &:focus {
+      border-color: #007bff;
+    }
+  }
+}

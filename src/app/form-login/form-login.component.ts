@@ -11,7 +11,23 @@ export class FormLoginComponent {
     password: '',
   };
 
+  error = {
+    email: '',
+    password: '',
+  };
+
   onSubmit() {
     console.log(this.login);
+  }
+
+  check() {
+    console.log(this.login.email);
+    if (this.login.email === '') {
+      this.error.email = 'Campo obrigatório';
+    } else if (this.login.email.indexOf('@') === -1) {
+      this.error.email = 'Email inválido';
+    } else {
+      this.error.email = '';
+    }
   }
 }

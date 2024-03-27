@@ -1,8 +1,18 @@
 <div class="form-login">
   <h2>LOGIN</h2>
-  <label>email</label>
-  <input type="email" [(ngModel)]="login.email" />
-  <label>senha</label>
-  <input type="password" [(ngModel)]="login.password" />
+  <custom-input
+    label="Email"
+    type="email"
+    [(value)]="login.email"
+    placeholder="Digite o Email"
+    (valueChange)="check()"
+    [error]="error.email"
+  ></custom-input>
+  <custom-input
+    label="Senha"
+    type="password"
+    [(value)]="login.password"
+    placeholder="Digite a senha"
+  ></custom-input>
   <button (click)="onSubmit()">LOGAR</button>
 </div>
