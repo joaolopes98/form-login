@@ -1,7 +1,9 @@
 <div class="switch-panel">
   <div class="switch-login">
     <div class="switch-login-content">
-      <ng-content select="[login]"></ng-content>
+      <div class="content-animation">
+        <ng-content select="[login]"></ng-content>
+      </div>
     </div>
     <div class="to-register delay-height">
       <button (click)="toggleSections()">REGISTRAR</button>
